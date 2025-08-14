@@ -5,23 +5,25 @@
 @import "swiper/css/pagination";
 @import "swiper/css/navigation";
 
-/* Renk değişkenleri */
+
 :root {
-  --primary: #6f4e37;       /* Mocha */
-  --accent: #c97e49;        /* Karamel */
-  --background: #fff5e1;    /* Latte Beyazı */
-  --text-color: #3B2F2F;    /* Espresso */
+  --primary: #6f4e37;       
+  --accent: #c97e49;        
+  --background: #fff5e1;    
+  --text-color: #3B2F2F;   
+  --latteDark: #b9835a;
 }
 
-/* Genel stil */
+
 body {
   font-family: 'Ubuntu', sans-serif !important;
   background-color: var(--background);
   color: var(--text-color);
   overflow-x: hidden;
+
 }
 
-/* Link reset */
+
 a {
   text-decoration: none;
   color: inherit;
@@ -35,7 +37,7 @@ a {
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* Swiper ok rengi */
+
 .swiper-button-next,
 .swiper-button-prev {
   color: #9ca3af !important; /* Gray-400 */

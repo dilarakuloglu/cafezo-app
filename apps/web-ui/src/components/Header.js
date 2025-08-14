@@ -3,12 +3,14 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FiShoppingCart } from "react-icons/fi";
+import { Leaf } from "lucide-react";
 
 const navItems = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
   { name: "Menu", href: "/menu" },
+  { name: "About", href: "/about" },
   { name: "Organization", href: "/organization" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function Header() {
@@ -16,10 +18,11 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full bg-white shadow-sm z-50">
-      <div className="max-w-7xl mx-auto h-[80px] px-8 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto h-[80px] px-1 flex items-center justify-between">
         {/* Sol logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <span className="text-2xl font-bold text-gray-900">CafeZo</span>
+        <Link href="/" className="flex gap-2 items-center">
+          <Leaf className = "w-6 h-6 text-green-600"/>
+          <span className="text-3xl font-bold text-gray-900">CafeZo</span>
         </Link>
 
         {/* Menü */}

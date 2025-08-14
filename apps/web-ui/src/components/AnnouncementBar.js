@@ -38,13 +38,15 @@ export default function AnnouncementBar() {
   return (
     <div className={`${isPromo ? "bg-latte text-white" : "bg-gray-100 text-gray-800"}`}>
   <div className="mx-auto max-w-7xl h-10 px-4 flex items-center overflow-hidden">
+
     {/* Marquee hattı */}
     <div className="relative w-full overflow-hidden">
       <span
         className="marquee text-sm font-medium"
         style={{ "--marquee-duration": "60s" }} // hız 
       >
-        {message.repeat(4)}
+        {message.repeat(5)}
+      
       </span>
     </div>
   </div>

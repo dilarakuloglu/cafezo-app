@@ -16,7 +16,7 @@ export default {
         accent: "var(--accent)",
         background: "var(--background)",
         text: "var(--text-color)",
-        latte: "#cfa17e",
+        latte: "var(--latte)",
         latteDark: "#b9835a",
       },
     },

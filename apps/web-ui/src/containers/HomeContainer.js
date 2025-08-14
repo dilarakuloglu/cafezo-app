@@ -5,17 +5,27 @@ import AnnouncementBar from "@/components/AnnouncementBar";
 
 export default function HomeContainer() {
   return (
-    <div>
-      <HomeSlider className ="mb-12" />
-      <section className="flex flex-col items-center justify-center min-h-[50vh] text-center px-4 bg-white space-y-6">
-        <h1 className="text-4xl font-bold text-[var(--primary)]">Freshly Brewed Happiness</h1>
-        <div className="w-24 h-1 bg-[var(--accent)] my-3 rounded-full"></div>
+    <div className="bg-white">
+      
+      <HomeSlider className="mb-12" />
 
-       
-        <AnnouncementBar  />
-        <p className="text-gray-40 text-lg mb-8 max-w-xl space-y-4">
-            Take a look at our menu to try our coffees made from the freshest beans!
+      <section className="max-w-7xl mx-auto flex flex-col items-center justify-center min-h-[50vh] text-center px-4 space-y-6">
+        <h1 className="text-3xl md:text-4xl font-bold text-[var(--primary)]">
+          Freshly Brewed Happiness
+        </h1>
+
+        <div className="w-40 h-1 bg-[var(--accent)] rounded-full" />
+
+        
+        <AnnouncementBar className=" mt-24 text-gray-700" />
+
+        
+
+        <p className=" mt-12 text-gray-600 text-lg max-w-xl">
+          Take a look at our menu to try our coffees made from the freshest beans!
         </p>
+        <div className=" w-40 h-1 bg-[var(--accent)] rounded-full" />
+
       </section>
     </div>
   );
